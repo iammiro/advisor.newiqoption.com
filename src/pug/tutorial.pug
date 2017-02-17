@@ -2,32 +2,9 @@ doctype html
 html
     head
         include includes/head.pug
-        style.
-            .active {
-                color: #fb7a08!important;
-            }
     body
         .cabinet-wrap
-            section.article-header
-                .header-wrapper
-                    .article-header-left-block
-                        .cabinet-header-logo
-                            a(href='/')
-                                .logo-circle
-                                    img(src='../img/logo.svg')
-                                span.logo-text iq advisor
-                        .article-header-nav
-                            ul.menu-list
-                                li
-                                    a#open-leader-board(href='leader-board.pug') LeaderBoard
-                                li
-                                    a#open-cabinet(href='personal-data.pug') Cabinet
-                                li
-                                    a#open-tutorial.active(href='tutorial.php') Tutorial
-                    .article-header-btn-block
-                        button.article-header-btn Go to IQ Option
-                .inner-menu
-                    .inner-header-wrapper
+            include includes/top-nav.pug
             section.article-page.tutorial
                 .wrap
                     h2

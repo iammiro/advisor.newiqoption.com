@@ -2,44 +2,9 @@ doctype html
 html
     head
         include includes/head.pug
-        style.
-            .inner-menu-cabinet {
-                display: flex !important;
-            }
-            .active {
-                color: #fb7a08 !important;
-            }
     body
         .cabinet-wrap
-            section.article-header
-                .header-wrapper
-                    .article-header-left-block
-                        .cabinet-header-logo
-                            a(href='/')
-                                .logo-circle
-                                    img(src='../img/logo.svg')
-                                span.logo-text iq advisor
-                        .article-header-nav
-                            ul.menu-list
-                                li
-                                    a#open-leader-board(href='leader-board.pug') LeaderBoard
-                                li
-                                    a#open-cabinet.active(href='personal-data.html') Cabinet
-                                li
-                                    a#open-tutorial(href='tutorial.pug') Tutorial
-                    .article-header-btn-block
-                        button.article-header-btn Go to IQ Option
-                .inner-menu
-                    .inner-header-wrapper
-                        ul#about-us.inner-menu-cabinet
-                            li
-                                a(href='smart-trade.pug') Smart Trade
-                            li
-                                a(href='deposit.pug') Deposit
-                            li
-                                a(href='withdraw-funds.pug') Withdraw Funds
-                            li
-                                a.active(href='personal-data.html') Personal Data
+            include includes/top-nav.pug
             section.article-page.cabinet.personal-data
                 .wrap
                     h2 Personal Data
@@ -156,30 +121,6 @@ html
                                     option 1982
                                     option 1981
                                     option 1980
-                        // <div class="form-group">
-                        // <div class="title">
-                        // <span>City</span>
-                        // </div>
-                        // <div class="input">
-                        // <input type="text">
-                        // </div>
-                        // </div>
-                        // <div class="form-group">
-                        // <div class="title">
-                        // <span>Zip</span>
-                        // </div>
-                        // <div class="input">
-                        // <input type="text">
-                        // </div>
-                        // </div>
-                        // <div class="form-group">
-                        // <div class="title">
-                        // <span>Address</span>
-                        // </div>
-                        // <div class="input">
-                        // <input type="text">
-                        // </div>
-                        // </div>
                         .form-group
                             button.green-button(type='submit') Save
                     form#phone-number
@@ -287,21 +228,21 @@ html
                         .goal-row
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/alotofcash.jpeg', alt='')
+                                    img(src='../img/alotofcash.jpeg', alt='')
                                 span.goal-cost $44,520
                                 span.goal-description A lot of cash
                                 button.goal-button(type='button')
                                     a(href='deposit.pug') CHOOSE
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/newcar.jpeg', alt='')
+                                    img(src='../img/newcar.jpeg', alt='')
                                 span.goal-cost $201,225
                                 span.goal-description New Car Bentley Continental GT
                                 button.goal-button(type='button')
                                     a(href='deposit.pug') CHOOSE
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/newferrari.jpeg', alt='')
+                                    img(src='../img/newferrari.jpeg', alt='')
                                 span.goal-cost $249,150
                                 span.goal-description New Ferrari 488GTB
                                 button.goal-button(type='button')
@@ -309,21 +250,21 @@ html
                         .goal-row
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/worldcruise.jpeg', alt='')
+                                    img(src='../img/worldcruise.jpeg', alt='')
                                 span.goal-cost $193,098 per person
                                 span.goal-description World Cruise on the Queen Elisabeth
                                 button.goal-button(type='button')
                                     a(href='deposit.pug') CHOOSE
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/ownhouseinalps.jpeg', alt='')
+                                    img(src='../img/ownhouseinalps.jpeg', alt='')
                                 span.goal-cost $827,178
                                 span.goal-description The House in the Alps, Switzerland
                                 button.goal-button(type='button')
                                     a(href='deposit.pug') CHOOSE
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/apartmentsinny.png', alt='')
+                                    img(src='../img/apartmentsinny.png', alt='')
                                 span.goal-cost $975,000
                                 span.goal-description Apartments in New York
                                 button.goal-button(type='button')
@@ -331,21 +272,21 @@ html
                         .goal-row
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/millionaire.jpeg', alt='')
+                                    img(src='../img/millionaire.jpeg', alt='')
                                 span.goal-cost $1,000,000
                                 span.goal-description Become a Millionaire
                                 button.goal-button(type='button')
                                     a(href='deposit.pug') CHOOSE
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/islandindubai.jpeg', alt='')
+                                    img(src='../img/islandindubai.jpeg', alt='')
                                 span.goal-cost $1,250,000
                                 span.goal-description "Own Island in Dubai, UAE"
                                 button.goal-button(type='button')
                                     a(href='deposit.pug') CHOOSE
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/lamborghinireventon.jpeg', alt='')
+                                    img(src='../img/lamborghinireventon.jpeg', alt='')
                                 span.goal-cost $1,499,900
                                 span.goal-description Lamborghini Reventon
                                 button.goal-button(type='button')
@@ -353,21 +294,21 @@ html
                         .goal-row
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/villainspain.jpeg', alt='')
+                                    img(src='../img/villainspain.jpeg', alt='')
                                 span.goal-cost $1,546,875
                                 span.goal-description A Villa in Spain
                                 button.goal-button(type='button')
                                     a(href='deposit.pug') CHOOSE
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/ownisland.jpeg', alt='')
+                                    img(src='../img/ownisland.jpeg', alt='')
                                 span.goal-cost $4,800,000
                                 span.goal-description Own Island in Caribbean Sea
                                 button.goal-button(type='button')
                                     a(href='deposit.pug') CHOOSE
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/Greek%20Island%20Zante.jpeg', alt='')
+                                    img(src='../img/Greek%20Island%20Zante.jpeg', alt='')
                                 span.goal-cost $6,934,265
                                 span.goal-description Greek Island Kardiotissa
                                 button.goal-button(type='button')
@@ -375,21 +316,21 @@ html
                         .goal-row
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/wineryinfrance.jpeg', alt='')
+                                    img(src='../img/wineryinfrance.jpeg', alt='')
                                 span.goal-cost $10,081,354
                                 span.goal-description Winery In South of France
                                 button.goal-button(type='button')
                                     a(href='deposit.pug') CHOOSE
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/privateyacht.jpeg', alt='')
+                                    img(src='../img/privateyacht.jpeg', alt='')
                                 span.goal-cost $13,311,000
                                 span.goal-description Private Yacht
                                 button.goal-button(type='button')
                                     a(href='deposit.pug') CHOOSE
                             .goal-item
                                 .goal-item-image-wrapper
-                                    img(src='../img/goals/londonapartments.jpeg', alt='')
+                                    img(src='../img/londonapartments.jpeg', alt='')
                                 span.goal-cost $36,237,505
                                 span.goal-description An apartment in London
                                 button.goal-button(type='button')
