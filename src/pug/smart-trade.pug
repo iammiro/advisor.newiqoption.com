@@ -1,0 +1,236 @@
+doctype html
+html
+    head
+        include includes/head.pug
+        style.
+            .inner-menu-cabinet {
+                display: flex !important;
+            }
+        style.
+            .active {
+                color: #fb7a08 !important;
+            }
+    body
+        .cabinet-wrap
+            section.article-header
+                .header-wrapper
+                    .article-header-left-block
+                        .cabinet-header-logo
+                            a(href='/')
+                                .logo-circle
+                                    img(src='../img/logo.svg')
+                                span.logo-text iq advisor
+                        .article-header-nav
+                            ul.menu-list
+                                li
+                                    a#open-leader-board(href='leader-board.pug') LeaderBoard
+                                li
+                                    a#open-cabinet.active(href='personal-data.pug') Cabinet
+                                li
+                                    a#open-tutorial(href='tutorial.pug') Tutorial
+                    .article-header-btn-block
+                        button.article-header-btn Go to IQ Option
+                .inner-menu
+                    .inner-header-wrapper
+                        ul#about-us.inner-menu-cabinet
+                            li
+                                a.active(href='smart-trade.php') Smart Trade
+                            li
+                                a(href='deposit.pug') Deposit
+                            li
+                                a(href='withdraw-funds.pug') Withdraw Funds
+                            li
+                                a(href='personal-data.pug') Personal Data
+            section.smart-trade
+                .wrap
+                    h2 RECENT SIGNALS
+                    table
+                        thead
+                            tr
+                                td S.No
+                                td Signal
+                                td Direction
+                                td Expiry
+                                td Time
+                                td Asset
+                                td Price
+                                td Outcome
+                                td Risk Management
+                        tr.green-row
+                            td 1
+                            td PULSE
+                            td
+                            td 5m
+                            td 6 hours and 19 minutes ago
+                            td EUR/GBP
+                            td 0.84998
+                            td ITM
+                            td.red-row 0% (0/1)
+                        tr.purple-row
+                            td 2
+                            td PULSE
+                            td
+                            td 5m
+                            td 9 hours and 17 minutes ago
+                            td USD/JPY
+                            td 114.89600
+                            td OTM
+                            td.red-row 42.9% (3/7)
+                        tr.green-row
+                            td 3
+                            td Mr_Sake
+                            td
+                            td 01:30 GMT
+                            td 11 hours and 58 minutes ago
+                            td EUR/NOK
+                            td 8.91461
+                            td ITM
+                            td.red-row 0% (0/4)
+                        tr.purple-row
+                            td 4
+                            td CURVE
+                            td
+                            td End of Hour
+                            td 12 hours and 52 minutes ago
+                            td GOLD
+                            td 1188.36650
+                            td OTM
+                            td.brown-row 60% (3/5)
+                        tr.green-row
+                            td 5
+                            td The Knick
+                            td
+                            td 15m
+                            td 14 hours and 50 minutes ago
+                            td EUR/GBP
+                            td 1.26002
+                            td ITM
+                            td.lite-green-row 100% (3/3)
+                        tr.green-row
+                            td 6
+                            td Sake Turbo
+                            td
+                            td 5m
+                            td 14 hours and 51 minutes ago
+                            td AUD/CAD
+                            td 0.98540
+                            td ITM
+                            td.lite-green-row 100% (8/8)
+                        tr.green-row
+                            td 7
+                            td Mr_Sake
+                            td
+                            td 22:30 GMT
+                            td 14 hours and 58 minutes ago
+                            td EUR/NOK
+                            td 8.90644
+                            td ITM
+                            td.brown-row 66.7% (2/3)
+                        tr.green-row
+                            td 8
+                            td PULSE
+                            td
+                            td 5m
+                            td 15 hours and 7 minutes ago
+                            td USD/CAD
+                            td 1.31015
+                            td ITM
+                            td.brown-row 60% (6/10)
+                        tr.purple-row
+                            td 9
+                            td PULSE
+                            td
+                            td 5m
+                            td 16 hours and 38 minutes ago
+                            td USD/CAD
+                            td 1.30953
+                            td OTM
+                            td.red-row 25% (1/4)
+                        tr.green-row
+                            td 10
+                            td Mr_Sake
+                            td
+                            td 13:00 GMT
+                            td 1 day and 26 minutes and 8 seconds ago
+                            td AUD/NZD
+                            td 1.04244
+                            td ITM
+                            td.lite-green-row 100% (1/1)
+                    .how-it-works
+                        h2 HOW IT WORKS
+                        // <h3>SIGNALS</h3>
+                        p
+                            | Upon registration you get access to 5 algorithmic signal streams (basic package) and then you also
+                            | get the option of subscribing for additional algorithmic streams and signal streams given by
+                            | selected traders . The expiries of the signal streams vary from 5minutes to End-of Day. The
+                            | performance of all signal streams is monitored live and you may choose the ones that suit you the
+                            | most!
+                    .smart-trade-faq
+                        h2 What is IQ Advisor Signals?
+                        p
+                            | IQ Advisor Signals is a market place for algorithmic (robotic) and human trader's signals which are to be
+                            | used in the binary options and FX industries. Traders can join and select the signal streams that
+                            | best fit to their style of trading, to help them understand and navigate the markets more
+                            | profitably.
+                        h2 Is it for me?
+                        p
+                            | IQ Advisor Signals is designed for binary option and FX traders. The signals and indicators on the
+                            | dashboard are custom designed for the binary options market, however they can be used for scalping
+                            | purposes on the traditional FX market, as well.
+                        h2 What are the main functions of IQ Advisor Signals?
+                        p
+                            | 'IQ Advisor Signals is a simple, high-quality signals community aimed at generating profitable growth for
+                            | binary option and FX traders. Upon accessing Signal Hive, traders get robotic signals with a
+                            | backtested win rate of about 65%, through time. They also, upon demand, can subscribe to senior,
+                            | hand-picked human traders, that deliver a set amount of signals daily; typically with win-rates
+                            | higher than the robots. What makes Signal Hive truly unique is the blend of the aforementioned
+                            | signals with a large chat-room, where traders can converse about market related topics, the signals
+                            | themselves or with senior traders, creating a true sense of financial community and responsibility.
+                        h2 Can the IQ Advisor Signals increase my win-rate?
+                        p
+                            | The IQ Advisor Signals has been specifically designed to generate profitable growth for traders who have none or
+                            | basic knowledge of the binary option and FX markets. For those not interested in education and
+                            | simply improving their chances to make money over time, Signal Hive will increase your win rate
+                            | because its algorithms and senior traders have solid, audited and transparent track records of
+                            | sustainable returns over time. Algorithms and traders that see a drop below 60% win rate, are
+                            | removed from IQ Advisor Signals automatically, so only the best survive.
+                        h2 What is the win-rate on the indicators and signals in IQ Advisor Signals?
+                        p
+                            | The win rate on the algorithmic (robotic) signals is 65%, on average, over time. For some signal
+                            | streams, our backtests have lasted 3 years and for some, 6 months to 1.5 years, thereby giving
+                            | reliable results. This does not mean that the robotic signals will generate profitable outcomes
+                            | every day; some days will be negative. However, our senior traders, that you can subscribe to in
+                            | addition, offer more stable and higher win-rates over time. Their win rates, over time, have
+                            | averaged 60-75%.
+                    .features
+                        h2
+                            | Features
+                        p
+                            | IQ Advisor Signal is a unique binary options and FX signals community and market-place. The below
+                            | are its
+                            | key features.
+                        .features-row
+                            .features-item
+                                img(src='../img/withdrawal-img/pen.png', alt='')
+                                h3 Signals
+                                p
+                                    | The IQ Advisor blasts over 25, backtested high quality trade signals per day in the member's
+                                    | area.
+                                    | These are based on our proprietary algorithms which show an average win rate of 65% over
+                                    | years of testing and data.
+                            .features-item
+                                img(src='../img/withdrawal-img/clk.png', alt='')
+                                h3 Observe the Leader
+                                p
+                                    | The IQ Advisor also allows you to subscribe to paid signal streams of star, hand-picked
+                                    | binary
+                                    | option traders with an audited track record. If robotic signals are not enough, or you
+                                    | prefer the human touch, observe the leaders!
+                            .features-item
+                                img(src='../img/withdrawal-img/bulb.png', alt='')
+                                h3 Transparency
+                                p
+                                    | Transparency is paramount to us and this is why the signal win rate is continuously updated
+                                    | and no losses are ever hidden. Your performance is our performance and we never display fake
+                                    | or smoothed-out results.
+            include includes/footer-litle.pug

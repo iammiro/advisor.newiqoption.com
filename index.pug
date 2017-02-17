@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+        include src/pug/includes/head.pug
+    body
+        .cabinet-wrap
+            section.article-header
+                .header-wrapper
+                    .article-header-left-block
+                        .cabinet-header-logo
+                            a(href='/')
+                                .logo-circle
+                                    img(src='img/logo.svg')
+                                span.logo-text iq advisor
+                        .article-header-nav
+                    .article-header-btn-block
+                        button.article-header-btn
+                            a(href='pages/login.php') Log In
+            section.register
+                .wrap
+                    .title
+                        h2
+                            span.orange START A SUCCESSFUL TRADER
+                        h2
+                            | CAREER 
+                            span.orange RIGHT NOW
+                        // <p>Log in:</p>
+                    .reg-form
+                        form
+                            .reg-form-wrap
+                                input.email(type='email', placeholder='Your E-mail', required='')
+                                input.password(type='password', placeholder='Your Password', required='')
+                                button.reg-form-bottom-btn.btn.btn__full.btn__full--green(type='button') Sign Up/Sign In
+                        p
+                            a(href='pages/forgotpass.php') Forgot your password?
+            include src/pug/includes/footer-litle.pug

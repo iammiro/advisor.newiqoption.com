@@ -1,0 +1,101 @@
+doctype html
+html
+    head
+        include includes/head.pug
+        style.
+            .inner-menu-cabinet {
+                display: flex !important;
+            }
+        style.
+            .active {
+                color: #fb7a08 !important;
+            }
+    body
+        .cabinet-wrap
+            section.article-header
+                .header-wrapper
+                    .article-header-left-block
+                        .cabinet-header-logo
+                            a(href='/')
+                                .logo-circle
+                                    img(src='../img/logo.svg')
+                                span.logo-text iq advisor
+                        .article-header-nav
+                            ul.menu-list
+                                li
+                                    a#open-leader-board(href='leader-board.pug') LeaderBoard
+                                li
+                                    a#open-cabinet.active(href='personal-data.pug') Cabinet
+                                li
+                                    a#open-tutorial(href='tutorial.pug') Tutorial
+                    .article-header-btn-block
+                        button.article-header-btn Go to IQ Option
+                .inner-menu
+                    .inner-header-wrapper
+                        ul#about-us.inner-menu-cabinet
+                            li
+                                a(href='smart-trade.pug') Smart Trade
+                            li
+                                a(href='deposit.pug') Deposit
+                            li
+                                a.active(href='withdraw-funds.php') Withdraw Funds
+                            li
+                                a(href='personal-data.pug') Personal Data
+            section.article-page.cabinet.withdraw
+                .wrap
+                    h2 Withdrawal
+                    p
+                        | You cannot withdraw the funds because your balance is 0. Please,
+                        a(href='deposit.pug')
+                            | refill your
+                            | balance
+                    .withdraw-icons
+                        .withdraw-icons-img.visa
+                        .withdraw-icons-img.qiwi
+                        .withdraw-icons-img.wmr
+                        .withdraw-icons-img.wme
+                        .withdraw-icons-img.fasapay
+                        .withdraw-icons-img.yandexmoney
+                        .withdraw-icons-img.wmz
+                        .withdraw-icons-img.netteler
+                        .withdraw-icons-img.skrill
+                        .withdraw-icons-img.wiretransfer
+                    .withdraw-type
+                    .withdraw-requests
+                        span Withdrawal requests
+                        span No requests
+                    .withdraw-withdraw-faq
+                        h2 Frequently asked questions
+                        #withdraw-accordion
+                            h3 ► Do you put any limits on withdrawing requests or maximum amounts?
+                            .withdraw-faq-block
+                                p
+                                    | We don't put limits on maximum amount or number of requests.
+                            h3 ► What is the commission upon making transactions with my trading account?
+                            .withdraw-faq-block
+                                p
+                                    | Our company does not take any commissions on your transactions. But such commissions can be
+                                    | taken by the payment systems or payment aggregators. Please be sure to check their terms and
+                                    | conditions.
+                            h3 ► Can I withdraw funds to my debit/credit card?
+                            .withdraw-faq-block
+                                p
+                                    | If you deposit funds via your debit/credit card, withdrawals are available only to this card
+                                    | and only in the amount of the deposit made via this card. The remainder can be withdrawn to
+                                    | your e-wallet.
+                            h3 ► Can I deposit/withdraw funds via electronic wallets?
+                            .withdraw-faq-block
+                                p
+                                    | Yes, you can use one of the electronic wallets in the "payment method" list to withdraw
+                                    | funds.
+                            h3
+                                | ► I can't make a deposit from my card, but I have money on it. What do I have to do?
+                            .withdraw-faq-block
+                                p
+                                    | Perhaps, your bank blocked a transaction. Ask your bank about the problem.
+                            h3 ► How much time does it take to withdraw funds?
+                            .withdraw-faq-block
+                                p
+                                    | Withdrawal requests are processed within 3 business days (e-wallets) and within up to 9
+                                    | business days (bank cards).
+            include includes/footer-litle.pug

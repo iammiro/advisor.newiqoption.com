@@ -1,0 +1,911 @@
+doctype html
+html
+    head
+        include includes/head.pug
+        style.
+            .active {
+                color: #fb7a08!important;
+            }
+    body
+        .cabinet-wrap
+            section.article-header
+                .header-wrapper
+                    .article-header-left-block
+                        .cabinet-header-logo
+                            a(href='/')
+                                .logo-circle
+                                    img(src='../img/logo.svg')
+                                span.logo-text iq advisor
+                        .article-header-nav
+                            ul.menu-list
+                                li
+                                    a#open-leader-board(href='leader-board.php') LeaderBoard
+                                li
+                                    a#open-cabinet.active(href='personal-data.pug') Cabinet
+                                li
+                                    a#open-tutorial(href='tutorial.pug') Tutorial
+                    .article-header-btn-block
+                        button.article-header-btn Go to IQ Option
+                .inner-menu
+                    .inner-header-wrapper
+                        ul#about-us.inner-menu-cabinet
+                            li
+                                a(href='smart-trade.pug') Smart Trade
+                            li
+                                a(href='deposit.pug') Deposit
+                            li
+                                a(href='withdraw-funds.pug') Withdraw Funds
+                            li
+                                a.active(href='personal-data.pug') Personal Data
+            section.article-page.cabinet.leader-bord
+                .wrap
+                    .column
+                        .leader-bord-header
+                            .row
+                                h2 Total Last Week Profit - over 5 mln $
+                                span
+                            .row
+                                h3 TOP Traders of the Last Week
+                        .leader-bord-body.column
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 1
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/germany.svg', alt='Germany', title='Germany')
+                                    span.leader-bord-item-name Oscar Otte
+                                    span.leader-bord-item-sum $17,016.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 2
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/belgium.svg', alt='Belgium', title='Belgium')
+                                    span.leader-bord-item-name Julianne Cagnina
+                                    span.leader-bord-item-sum $16,884.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text(onclick="open_story('fb-story-1'); return false")
+                                        img#toggleSpan1(src='http://newiqoption.com/img/facebook-blue.svg')
+            section#fb-story-1.success-stories(style='display: none;')
+                .fb-success-story.fb-success-story-1
+                    .fb-top-nav
+                        img(src='http://newiqoption.com/img/facebook.svg')
+                        span True story from our trader Julianne Cagnina on Facebook
+                    .fb-success-story-header
+                        .fb-success-story-header-img
+                            img(src='http://newiqoption.com/img/avatars/Julianne.jpg')
+                        .fb-name-and-date
+                            span.name Julianne Cagnina
+                            span.date
+                                | 16 January at 14:43 - Paris, France
+                                img(src='http://newiqoption.com/img/avatars/wold.png')
+                    .fb-success-story-body
+                        p
+                            | My name is Julianne, and I study for 3 years in Berlin. Immediately after admission, it seemed to me
+                            | that the most difficult things are behind and cheerful student weekdays with friends, gatherings
+                            | with beer and traveling for the weekends are waiting for me.
+                            | Lack of scholarships didn't make me worried because I was sure that there would be no problems to
+                            | find a part time job.
+                            | It was really easy to find waitress work position; just it was semi-impossible to combine work and
+                            | study.
+                            | At mornings, I ran to study then after classes ran to the library and at evenings spent hours at
+                            | work in the coffee shop.
+                            | At first, my parents helped me by paying the rent cost fully but one year later, my younger brother
+                            | joined the university, and I had to cope by myself.
+                            | How could I manage walking with friends or traveling if I slept four hours a day? I thought it would
+                            | never end: on weekends, I was working and catching up in the university what I missed, and during
+                            | the weekdays, I studied and worked again.
+                            | In the third year of this life, I no longer heard the alarm clock and even slept twice instead of
+                            | important lectures. Then I was warned that if the situation does not change - I would be expelled.
+                            | I didn't know what to do next. I rented a room far from the university, for a long time, I didn't
+                            | buy new clothes, and in every possible way, I saved on food. I couldn't stop working, as in this
+                            | case, I would have no living place, but I had no power anymore to combine work and study.
+                            | First, I decided to find another highly paid job, but it turned out that there is a surplus of
+                            | workers in the country. And after the recent events in Eastern Europe and the big amount of
+                            | refugees, salaries of waitresses, secretaries, au pairs and even nannies dropped significantly. Now
+                            | even my 10 Euros per hour seemed an excellent option.
+                            | After one more failure, I was going to take a loan and ask family for the help, but my roommate
+                            | saved me. I lived together with Marie for more than six months. She is beautiful, with brand
+                            | clothes, cool haircut, and a new car; it seemed like an unattainable dream. I didn't understand for
+                            | a long time why did she rent shared apartment while she clearly could afford more expensive housing.
+                            | One evening, I couldn't stand and complained about my life to her. When Marie said that all my
+                            | problems could be solved just in a week, I didn't believe it. Then she offered me to visit the
+                            | newiqoption.com website and to register there.
+                            | Marie has been doing this for a year, and she really could move out to another flat, but she wants
+                            | to have her own apartment, which she plans to buy after few months.
+                            | I couldn't believe that by spending time on the Internet, you can earn that kind of money. However,
+                            | I had Marie as a sample in front of me, and I decided to try all that. Just in one night, I got as
+                            | much as I get for a week of exhausting work, just here, there were no heavy trays, night shifts,
+                            | unfriendly visitors nor spilled coffee on the apron. I’m no longer depend on tips; I shouldn't smile
+                            | for hours and wear an awful green uniform.
+                            | When I woke up next morning, I was sure that all this was a dream, and today again will repeat my
+                            | typical day: university, library, and hateful work.
+                            | Nevertheless, when I checked my e-wallet, I realized that my life had changed dramatically, and it
+                            | will never be again as before.
+                            | The same evening, I spoke with the owner of the coffee shop and stopped working there. Spending just
+                            | 4 hours every day, I could not only provide myself with all necessary things, but I could remind
+                            | about my dreams.
+                            | I did not see the world around me and people for three years. I needed only a week on the
+                            | newiqoption.com website to finally find friends at the university, join the gym, and buy a bicycle.
+                            | A month later, I went with friends to Paris, and in two months, I started to help my parents and
+                            | brother financially.
+                            | Besides, I got more time to study. Since I registered on newiqoption.com, I haven't missed a single
+                            | lecture, and quickly became one of the best students.
+                            | There were no more sleepless nights, constant fatigue, and feeling that I’m 90 years old. I felt
+                            | like a young girl who can do anything.
+                            | I often didn't pay attention to the messages in the network related to the work; I was laughing on
+                            | those who believed that 200 Euros could be earned easily in just a few hours that I could miss a
+                            | chance.
+                            | For what to suffer on a low paid job, if you can earn big money without leaving home? If I could do
+                            | this, then you also can.
+                            | The main thing is to believe in yourself and don't give up. By sitting at home and suffering, you
+                            | will never change your life.
+                            | I know how hard it is to work and learn at the same time, that's why I wanted to share my story.
+                            | It is real to earn 30,000 Euros per month in just a few hours of work per week; you don't need large
+                            | initial investments for this, or special education, or large experience.
+                            | You can save over the years and work around the clock, or you can just try your hands at binary
+                            | options.
+                    .fb-success-story-footer
+                        .fb-smiles
+                            .fb-smiles-wrap
+                                img(src='http://newiqoption.com/img/avatars/smiles.png')
+                                span.fb-comments Top Comments
+                div
+            section.article-page.cabinet.leader-bord
+                .wrap
+                    .column
+                        .leader-bord-body.column
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 3
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/denmark.svg', alt='Denmark', title='Denmark')
+                                    span.leader-bord-item-name Chris Hollingshead
+                                    span.leader-bord-item-sum $16,752.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 4
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/austria.svg', alt='Austria', title='Austria')
+                                    span.leader-bord-item-name Bastian Trinker
+                                    span.leader-bord-item-sum $16,730.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text(onclick="open_story('fb-story-2'); return false")
+                                        img(src='http://newiqoption.com/img/facebook-blue.svg')
+            section#fb-story-2.success-stories(style='display: none;')
+                .fb-success-story.fb-success-story-1
+                    .fb-top-nav
+                        img(src='http://newiqoption.com/img/facebook.svg')
+                        span True story from our trader Bastian Trinker on Facebook
+                    .fb-success-story-header
+                        .fb-success-story-header-img
+                            img(src='http://newiqoption.com/img/avatars/Bastian.jpg')
+                        .fb-name-and-date
+                            span.name Bastian Trinker
+                            span.date
+                                | 12 January at 19:25 - Midu, Maldivas
+                                img(src='http://newiqoption.com/img/avatars/wold.png')
+                    .fb-success-story-body
+                        p
+                            | My name is Bastian and I am 24 years old. I bought an Audi R8 just a month ago. Just half a year
+                            | ago, I couldn’t even dream of owning such a new cool car. Of course, my parents had promised to buy
+                            | me a car as soon as I graduated from university, but I didn’t want a second hand car, and it would
+                            | have taken me a few years to earn enough to buy a new one. It had been long time since my parents
+                            | stopped giving me pocket money, that’s why I started looking for a job when I was 20. I worked as a
+                            | pizza guy, a courier, a furniture assembler, and even a dog-sitter. Nevertheless, my savings were
+                            | barely enough to buy food and go out with friends. I obviously didn’t have enough for concerts,
+                            | girlfriends, or a cool car.
+                            | Once I got my precious diploma, I was sure that I would be able to afford myself many more things
+                            | and that my dream would come true.
+                            | In fact, I just became another unemployed student, nobody was interested in young specialists.
+                            | I had no useful connections, so I didn’t manage to find my dream job, and started looking for any
+                            | chance to earn a living. That’s how I found myself in phone sales.
+                            | My friends and course mates couldn’t find a good job either. There are massive layoffs, and trade
+                            | unions keep protesting. Those who had managed to find well-paid positions during the university
+                            | internship lost them as well and were looking for any chance to make money, like me.
+                            | My new salary wasn’t enough to even rent a proper place: the rooms were either uninhabitable, or
+                            | hours away from where I worked, so I kept living with my parents, in the room where I grew up.
+                            | Sales were not going too well, my salary didn't increase, and there was no money for a new car.
+                            | Looking for a new job didn’t prove successful. The more time passed, the more I was imagining what
+                            | my future life would be like: five more years in telephone sales, then, if I were lucky, I would be
+                            | promoted to a customer manager, and then…nothing. No perspective, no development, no savings.
+                            | I even got rid of all the car posters in my room, since I understood that the most I could hope for
+                            | was some clunker with high mileage. If I hadn’t been living with my parents I would have died,
+                            | either of starvation or from the cheap food I was eating every day.
+                            | I would ride a bus to go to work a job that I considered the most useless in the world and watch our
+                            | boss arrive in a shiny Mercedes. When he got a new car two months after I had started working, I
+                            | realized that I couldn’t take it anymore.
+                            | That same evening I started searching on the internet to find ways to earn money quickly. Most of
+                            | them looked like scams to me, and my goal was earning at least 50 euros daily in addition to my
+                            | usual salary. But the more I was thinking about it, the clearer it was to me that even in that case
+                            | I would have to spend a few years to earn enough for a new car.
+                            | In the end, I just clicked on a story of some guy like me, a university graduate, who, having signed
+                            | up for newiqoption.com, started earning 15,000 euros a month. That was what I made in a year.
+                            | I decided that I had nothing left to lose and went for it. Of course, I had to spend a few hours to
+                            | get into the swing of things, but by the morning I already made my first 100 euros, while I only had
+                            | to make some small investment. The next day, I kept staking cautiously after work, holding myself
+                            | back all the time and expecting it to turn out to be a dream… But that didn’t happen, and I again
+                            | became 500 euro richer.
+                            | I had no more doubts, I quit my job without worries and started working about 7 hours a day on
+                            | newiqoption.com. The figures on my cards kept rising, and my room was full of car magazines once
+                            | again. It took me two months to buy my beautiful Audi R8. I still can’t believe that it’s mine, and
+                            | that I earned the money for it quickly and legally myself, without my family helping me.
+                            | Whenever I get behind the wheel, I realize that quitting my job and getting into the binary options
+                            | was the right decision.
+                            | I never used to believe such stories when they were showing up in my browser, and now here I am,
+                            | publishing such a story myself. This is a true story, I am Bastian, and I have the coolest car in
+                            | town, which I bought thanks to earning on iqoption.
+                            | I have moved out from my parents’ house and now I want to have my own one.
+                            | Last month I earned 45,000 euro, and that is not where it ends.
+                            | If you also want to have your own car or a bike, or to travel the world – start earning with binary
+                            | options, and make your dream will come true. I spent years torturing myself with side jobs while
+                            | studying, I used to work in a place I disliked after I graduated, while I could have started living
+                            | well and enjoying every day of my life a long time ago.
+                            | I am not afraid of an financial crisis, unemployment, or layoffs anymore. I don’t have to spend 50
+                            | minutes in a bus filled with 30 more losers like me to get to the office. I no longer have to call
+                            | 100 customers a day, offering them things that I would have never bought myself, if I had extra
+                            | money.
+                            | Now I am the master of my own happiness, I have already bought a car, and I can get a new one
+                            | whenever I want to, I have moved to a wonderful flat with a nice view, I go out every night with my
+                            | friends to a football match, a concert, or a bar.
+                            | While you are wasting your time, and you don’t even try, your dreams become more and more distant.
+                    .fb-success-story-footer
+                        .fb-smiles
+                            .fb-smiles-wrap
+                                img(src='http://newiqoption.com/img/avatars/smiles.png')
+                                span.fb-comments Top Comments
+                div
+            section.article-page.cabinet.leader-bord
+                .wrap
+                    .column
+                        .leader-bord-body.column
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 5
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/chile.svg', alt='Chiele', title='Chiele')
+                                    span.leader-bord-item-name Cristobal Saavedra Corvalan
+                                    span.leader-bord-item-sum $15,432.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 6
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/china.svg', alt='China', title='China')
+                                    span.leader-bord-item-name Fajing Sun
+                                    span.leader-bord-item-sum $14,982.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 7
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/south-korea.svg', alt='Korea Republic', title='Korea Republic')
+                                    span.leader-bord-item-name Sang Woo Noh
+                                    span.leader-bord-item-sum $14,783.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text(onclick="open_story('fb-story-3'); return false")
+                                        img(src='http://newiqoption.com/img/facebook-blue.svg')
+            section#fb-story-3.success-stories(style='display: none;')
+                .fb-success-story.fb-success-story-1
+                    .fb-top-nav
+                        img(src='http://newiqoption.com/img/facebook.svg')
+                        span True story from our trader Sang Woo Noh on Facebook
+                    .fb-success-story-header
+                        .fb-success-story-header-img
+                            img(src='http://newiqoption.com/img/avatars/Sang.jpg')
+                        .fb-name-and-date
+                            span.name Sang Woo Noh
+                            span.date
+                                | 11 January at 09:56 - Downtown, Singapore
+                                img(src='http://newiqoption.com/img/avatars/wold.png')
+                    .fb-success-story-body
+                        p
+                            | I was sure that, for having a bright future, it is enough to get a good education and to work hard,
+                            | but life appears to have its own plans. I even was lucky after graduation from the university to
+                            | find a job in a good company where I worked for two years successfully. During that time, I got
+                            | married, rent a nice apartment, and I was about to take credit for having my own home when the
+                            | crisis of 2012 suddenly came.
+                            | At first, I was sure that this situation wouldn't affect me: where Greece is, and where we are.
+                            | However, as much time passed, as much the surrounding reality was affecting my family.
+                            | I stopped the idea of having own home; there were fewer orders at work, branches in other cities
+                            | were closing, the most talented people went to other companies, and even my boss decided to change
+                            | his life radically.
+                            | Just I didn't want to change anything, I liked my job, I got a stable income there, and believed
+                            | that soon everything would return to normal. And actually - I was afraid, afraid of changes and
+                            | failure.
+                            | But six months later, I had no other choice as to move with my wife to live with parents.
+                            | Every day quarrels become more frequent, and no one could see any solutions for problems.
+                            | My wife was indignant that we couldn't buy our own home, that we stopped visiting restaurants and
+                            | theaters, and that we drive old cars, which were presented by parents.
+                            | Increasingly, she told me about her friends, who change cars, fly to the islands on vacation, and
+                            | let their children study in private schools.
+                            | I had nothing to say. Favorite work became hateful, all my best friends and whom I contacted with
+                            | left the company. I felt myself a looser because being 30 years old I was still living in parents'
+                            | home and couldn't provide my wife with everything she needs.
+                            | On TV advertising, there were shown successful, confident men, and I understood that I would never
+                            | reach anything.
+                            | Being in such condition, I met my first boss. And while my life went down, he obviously changed
+                            | everything for the better. His suit, watches, and phone were clearly talking about a high salary.
+                            | We talked for a few hours in the bar, and he invited me with my wife to visit his house. In the few
+                            | years that we haven't seen each other, my boss bought own house in a good area.
+                            | Once I saw his house, I realized that all my life I was dreaming about it: it was spacious and
+                            | modern.
+                            | While women were talking, he told me that he could earn money for this house in just six months.
+                            | When the crisis began, he, as many others, went to the internet looking for a new job. After some
+                            | tries in binary options, he realized that money could be made much easier and faster. For the first
+                            | time he invested just 100$ particularly without any belief in success, but after an hour, on his
+                            | account was 230$.
+                            | When I knew about iqoption, I had to try it. I saw my wife looking at the house and searching for a
+                            | new car on the internet. Also, she took extra shifts at the hospital, where she was working.
+                            | I spent all night on the website, but at morning, I could boast of 600$ net profit. It was pretty
+                            | easy to understand the site and the system, so I went on, and in two days off, I could boast of the
+                            | sum of 2000$.
+                            | I realized that for larger winnings, the risk should be with higher sums, but I still hesitated. I
+                            | kept working with the same company, but every evening, I spent, at least few hours, on
+                            | newiqoption.com. I have fully understood throughout, and in a week, I could withdraw from the card
+                            | my monthly salary.
+                            | When I once again had to correct bosses mistakes and to persuade a client to stay with our company,
+                            | I realized that I had enough.
+                            | Now, I decide by myself when my workday begins and ends and, at the same time, with earning 10 times
+                            | higher.
+                            | After few days we moved from parents home to a large apartment in the city center, and on the
+                            | wedding anniversary, wife got BMW X6 that was her dream as a present.
+                            | Our life becomes better; now we can spend more time together.
+                            | Every time I invest larger amounts and can't stop wondering how easy I can make money.
+                            | My boss is laughing at me and says that, in a month, he earns more than 50 000$ and my 30 000$ are
+                            | like pocket money just.
+                            | I was finally able to buy a car that I wanted, to have dinners in restaurants, to buy a motor boat
+                            | and a fishing rod to get out to go fishing on weekends.
+                            | Very soon will be ready our first own apartment. I couldn't even imagine that all that would be so
+                            | easy to buy.
+                            | I already stopped believing in myself when I faced binary options, but now I realize that my life is
+                            | just beginning.
+                            | For what to suffer from an unbearable boss, to work 12 hours a day and be envious of neighbors,
+                            | while you can just register on newiqoption.com and earn 15 000 $ per month? If nothing changing
+                            | around you, so you don't want it. There is a real opportunity to earn money, and only from you
+                            | depends whether you use it or not. Why someone else will enjoy the life?
+                            | I was able to realize my dreams and buy my own apartment. What about you? Do you have a dream?
+                    .fb-success-story-footer
+                        .fb-smiles
+                            .fb-smiles-wrap
+                                img(src='http://newiqoption.com/img/avatars/smiles.png')
+                                span.fb-comments Top Comments
+                div
+            section.article-page.cabinet.leader-bord
+                .wrap
+                    .column
+                        .leader-bord-body.column
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 8
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/new-zealand.svg', alt='New Zeland', title='New Zeland')
+                                    span.leader-bord-item-name Travis Sheasgreen
+                                    span.leader-bord-item-sum $14,441.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 9
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/france.svg', alt='France', title='France')
+                                    span.leader-bord-item-name Antoine Escoffier
+                                    span.leader-bord-item-sum $14,141.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 10
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/france.svg', alt='France', title='France')
+                                    span.leader-bord-item-name Laurent Rochette
+                                    span.leader-bord-item-sum $14,135.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 11
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/turkey.svg', alt='Turkey', title='Turkey')
+                                    span.leader-bord-item-name Anil Yuksel
+                                    span.leader-bord-item-sum $14,084.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 12
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/china.svg', alt='China', title='China')
+                                    span.leader-bord-item-name Chuhan Wang
+                                    span.leader-bord-item-sum $13,999.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 13
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/israel.svg', alt='Israel', title='Israel')
+                                    span.leader-bord-item-name David Joyal
+                                    span.leader-bord-item-sum $13,564.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 14
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/austria.svg', alt='Austria', title='Austria')
+                                    span.leader-bord-item-name David Pichler
+                                    span.leader-bord-item-sum $13,522.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 15
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/china.svg', alt='China', title='China')
+                                    span.leader-bord-item-name Yecong He
+                                    span.leader-bord-item-sum $13,513.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 16
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/germany.svg', alt='Germany', title='Germany')
+                                    span.leader-bord-item-name Robin Kern
+                                    span.leader-bord-item-sum $13,455.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text(onclick="open_story('fb-story-4'); return false")
+                                        img(src='http://newiqoption.com/img/facebook-blue.svg')
+            section#fb-story-4.success-stories(style='display: none;')
+                .fb-success-story.fb-success-story-1
+                    .fb-top-nav
+                        img(src='http://newiqoption.com/img/facebook.svg')
+                        span True story from our trader Robin Kern on Facebook
+                    .fb-success-story-header
+                        .fb-success-story-header-img
+                            img(src='http://newiqoption.com/img/avatars/robin.jpg')
+                        .fb-name-and-date
+                            span.name Robin Kern
+                            span.date
+                                | 9 January at 15:17 - Las Vegas, Nevada, US
+                                img(src='http://newiqoption.com/img/avatars/wold.png')
+                    .fb-success-story-body
+                        p
+                            | I was confident that for a bright future it's enough to get a good education and work hard, but life
+                            | has its own plans. I was even lucky to after graduating from university to be hired by a great
+                            | company where I successfully worked for two years. During that time I got married, rented a nice
+                            | apartment and was about to take a loan for buying a house, when the crisis broke out in 2012.
+                            | At first I was sure that I will not be touched by this situation: where is Greece, and where are we
+                            | ? But the more time was passing, the more the reality started to affect my family.
+                            | I stopped looking for apartments to buy, there're less and less orders at my work, we started to
+                            | close branches in other cities, the most talented guys left to work for other companies, even my
+                            | boss decided to radically change his life.
+                            | But I did not want to change anything, I liked my job, I was getting a stable income, and believed
+                            | that soon everything will return to normal. But in reality - I was afraid, afraid of changes and
+                            | failures.
+                            | Six months later me and my wife were forced to move in with my parents.
+                            | Every day quarrels became more frequent, and none of us could see any solutions to problems.
+                            | The wife was indignant that we can not buy our own place to live, so we stopped going out to
+                            | restaurants and theaters that we go on older machines, which we presented to parents more.
+                            | Even more, she started to tell me about her girlfriends, who change cars, spend vacations on
+                            | islands, take their children to private schools.
+                            | I had nothing to say to that. Favorite work suddenly become hateful, all my close friends and
+                            | acquaintances left the company. I felt like a failure, because at 30 years old I was still living in
+                            | my parents' home and could not provide my wife with everything she needed.
+                            | Adverts and TV shows were showing successful confident men, and I was realizing that I will never
+                            | reach anymore.
+                            | In this state, I met my first boss. And if my life was going downhill, then his obviously have
+                            | changed for the better. His suit, watch and phone were clearly talking about the high salary.
+                            | We talked for a few hours in the bar, and he invited me and my wife to his house. In the few years
+                            | that we have not seen each other, my boss managed to buy his own house in a decent neighborhood.
+                            | Seeing his home, I realized that all my life I dreamed about one like this: spacious and modern.
+                            | While the women talked, he told me that he made money to buy this house in just six months.
+                            | When the crisis began, he and many others went online to look for a new job. After getting a taste
+                            | of binary options, he realized that money can be made much easier and faster. In the beginning. He
+                            | has allocated only 100 euros - not believing too much in success, but after an hour there're 230 on
+                            | his account.
+                            | After hearing about iqoption I couldn't not try it. I saw how my wife was looking at this house, how
+                            | she looked online for a new car, how she took extra shifts at the hospital, where she worked
+                            | I sat on the site all night, but already in the morning could show 600 euros net profit. To
+                            | understand the site and the system turned out to be pretty easy, so I continued for the next two
+                            | days and increased the profit to 2000 euros.
+                            | I realized that for large winnings, I need to risk larger sums, but still did not dare.
+                            | I continued to go to work, but in the evenings spent at least a few hours sitting on
+                            | newiqoption.com. I have fully understood it all, and in a week could already withdraw a monthly
+                            | salary from my card.
+                            | When I once again had to correct the mistakes of my bosses and persuade the client to stay with our
+                            | company, I realized that I've had enough.
+                            | Now I decide myself when to start and end my working day, at the same time earning 10 times more.
+                            | A few days later we moved from parent's house to a large apartment in the city center, and my wife
+                            | got a BMW X6, which she dreamed about, as a present on the wedding anniversary.
+                            | Our lives have improved, and now we can spend more time together.
+                            | Each time I invest bigger amount and can not help wondering how easy I can make money.
+                            | My boss laughs at me and says that he earns more than EUR 50 000 per month, while my 30 000 — are
+                            | miserablehttp://newiqoption.com
+                            | I was finally able to buy a car which I wanted, dine in restaurants, buy a motor boat and a fishing
+                            | rod to go fishing on weekends.
+                            | Very soon our first own apartment will be ready. I could not even imagine that it will be so easy to
+                            | buy all this.
+                            | I have already stopped believe in myself when I learned about binary options, but now I realize that
+                            | my life is just starting.
+                            | Why endure the unbearable bosses, work 12 hours a day and be jealous of neighbors, when you can just
+                            | register on newiqoption.com and earn 15 000 euros per month? If nothing changes around you, it means
+                            | you don't want it. There is a real opportunity to earn, and it depends only on you whether you use
+                            | it or not. Why should somebody else enjoy life, but not you?
+                            | I was able to make my dream come true and bought my own apartment, and you have a dream?
+                    .fb-success-story-footer
+                        .fb-smiles
+                            .fb-smiles-wrap
+                                img(src='http://newiqoption.com/img/avatars/smiles.png')
+                                span.fb-comments Top Comments
+                div
+            section.article-page.cabinet.leader-bord
+                .wrap
+                    .column
+                        .leader-bord-body.column
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 17
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/slovakia.svg', alt='Slovakia', title='Slovakia')
+                                    span.leader-bord-item-name Patrik Fabian
+                                    span.leader-bord-item-sum $13,412.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 18
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/italy.svg', alt='Italy', title='Italy')
+                                    span.leader-bord-item-name Flavio Cipolla
+                                    span.leader-bord-item-sum $13,322.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 19
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/france.svg', alt='France', title='France')
+                                    span.leader-bord-item-name Fabien Reboul
+                                    span.leader-bord-item-sum $13,308.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 20
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/spain.svg', alt='Spain', title='Spain')
+                                    span.leader-bord-item-name Daniel Munoz de la Nava
+                                    span.leader-bord-item-sum $13,289.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 21
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/italy.svg', alt='Italy', title='Italy')
+                                    span.leader-bord-item-name Francisco Bahamonde
+                                    span.leader-bord-item-sum $13,277.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 22
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/france.svg', alt='France', title='France')
+                                    span.leader-bord-item-name Thomas Brechemier
+                                    span.leader-bord-item-sum $13,276.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 23
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/indonesia.svg', alt='Indonesia', title='Indonesia')
+                                    span.leader-bord-item-name Tzach Makmal
+                                    span.leader-bord-item-sum $13,249,00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 24
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/united-states.svg', alt='USA', title='USA')
+                                    span.leader-bord-item-name Jared Hiltzik
+                                    span.leader-bord-item-sum $13,236.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 25
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/germany.svg', alt='Germany', title='Germany')
+                                    span.leader-bord-item-name Christoph Negritu
+                                    span.leader-bord-item-sum $13,233.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 26
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/france.svg', alt='France', title='France')
+                                    span.leader-bord-item-name Frederic Salaun
+                                    span.leader-bord-item-sum $13,214.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 27
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/russia.svg', alt='Russian Federation', title='Russian Federation')
+                                    span.leader-bord-item-name Victor Baluda
+                                    span.leader-bord-item-sum $13,201.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 28
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/china.svg', alt='China', title='China')
+                                    span.leader-bord-item-name Yan Bai
+                                    span.leader-bord-item-sum $12,199.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 29
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/thailand.svg', alt='Thailand', title='Thailand')
+                                    span.leader-bord-item-name Bung Atchariyaphuk
+                                    span.leader-bord-item-sum $12,195.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 30
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/israel.svg', alt='Israel', title='Israel')
+                                    span.leader-bord-item-name Remon Ibrahim
+                                    span.leader-bord-item-sum $12,194.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 31
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/belgium.svg', alt='Belgium', title='Belgium')
+                                    span.leader-bord-item-name Omar Salman
+                                    span.leader-bord-item-sum $12,176.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 32
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/brazil.svg', alt='Brasil', title='Brasil')
+                                    span.leader-bord-item-name Marcelo Zormann
+                                    span.leader-bord-item-sum $12,132.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 33
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/italy.svg', alt='Italy', title='Italy')
+                                    span.leader-bord-item-name Omar Giacalone
+                                    span.leader-bord-item-sum $12,219.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 34
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/ukraine.svg', alt='Ukraine', title='Ukraine')
+                                    span.leader-bord-item-name Artem Smirnov
+                                    span.leader-bord-item-sum $12,139.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 35
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/austria.svg', alt='Austria', title='Austria')
+                                    span.leader-bord-item-name Pascal Brunner
+                                    span.leader-bord-item-sum $12,059.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 36
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/vietnam.svg', alt='Vietnam', title='Vietnam')
+                                    span.leader-bord-item-name Hui Lok Shu
+                                    span.leader-bord-item-sum $11,979.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 37
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/netherlands.svg', alt='Netherlands', title='Netherlands')
+                                    span.leader-bord-item-name Erinn van Wynsberghe
+                                    span.leader-bord-item-sum $11,899.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 38
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/vietnam.svg', alt='Vietnam', title='Vietnam')
+                                    span.leader-bord-item-name Nam Hoang Ly
+                                    span.leader-bord-item-sum $11,820.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 39
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/thailand.svg', alt='Thailand', title='Thailand')
+                                    span.leader-bord-item-name Ratinan Choochaimangkhala
+                                    span.leader-bord-item-sum $11,740.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 40
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/jamaica.svg', alt='Jamaica', title='Jamaica')
+                                    span.leader-bord-item-name Jason Sharpe
+                                    span.leader-bord-item-sum $11,660.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 41
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/croatia.svg', alt='Croatia', title='Croatia')
+                                    span.leader-bord-item-name Matija Pecotic
+                                    span.leader-bord-item-sum $11,580.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 42
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/japan.svg', alt='Japan', title='Japan')
+                                    span.leader-bord-item-name Jumpei Yamasaki
+                                    span.leader-bord-item-sum $11,500.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 43
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/ukraine.svg', alt='Ukraine', title='Ukraine')
+                                    span.leader-bord-item-name Filipp Kekercheni
+                                    span.leader-bord-item-sum $11,420.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 44
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/united-states.svg', alt='USA', title='USA')
+                                    span.leader-bord-item-name Jeremy Miller
+                                    span.leader-bord-item-sum $11,340.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 45
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/canada.svg', alt='Canada', title='Canada')
+                                    span.leader-bord-item-name Virgil McLaren
+                                    span.leader-bord-item-sum $11,260.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 46
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/bolivia.svg', alt='Bolivia', title='Bolivia')
+                                    span.leader-bord-item-name Federico Zeballos
+                                    span.leader-bord-item-sum $11,180.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 47
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/poland.svg', alt='Poland', title='Poland')
+                                    span.leader-bord-item-name Marcin Gawron
+                                    span.leader-bord-item-sum $11,100.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 48
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/france.svg', alt='France', title='France')
+                                    span.leader-bord-item-name Geoffrey Blancaneaux
+                                    span.leader-bord-item-sum $11,020.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 49
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/united-kingdom.svg', alt='United Kingdom', title='United Kingdom')
+                                    span.leader-bord-item-name Neil Pauffley
+                                    span.leader-bord-item-sum $10,940.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .leader-bord-item.row
+                                .row.leader-bord-item-left-column
+                                    span.leader-bord-item-integer 50
+                                .row.leader-bord-item-center-column
+                                    span.flag
+                                        img(src='http://newiqoption.com/img/flags/india.svg', alt='India', title='India')
+                                    span.leader-bord-item-name Sanam Singh
+                                    span.leader-bord-item-sum $10,860.00
+                                .row.leader-bord-item-right-column
+                                    span.under-flag-text
+                            .under-leader-board-a
+                                h3
+                                    | There are just 50 our best traders.
+                                    a(href='deposit.pug') Join for winners of this week!
+            include includes/footer-litle.pug

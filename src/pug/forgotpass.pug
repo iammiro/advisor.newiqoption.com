@@ -1,0 +1,59 @@
+doctype html
+html
+    head
+        include includes/head.pug
+        style.
+            .inner-menu-cabinet {
+                display: flex !important;
+            }
+            .active {
+                color: #fb7a08 !important;
+            }
+    body
+        .cabinet-wrap
+            section.article-header
+                .header-wrapper
+                    .article-header-left-block
+                        .cabinet-header-logo
+                            a(href='/')
+                                .logo-circle
+                                    img(src='../img/logo.svg')
+                                span.logo-text iq advisor
+                        .article-header-nav
+                            // <ul class="menu-list">
+                            // <li><a href="pug/leader-board.html" id="open-leader-board">LeaderBoard</a></li>
+                            // <li><a href="index.html" id="open-cabinet" class="active">Cabinet</a></li>
+                            // <li><a href="pug/tutorial.html" id="open-tutorial">Tutorial</a></li>
+                            // </ul>
+                    .article-header-btn-block
+                        button.article-header-btn
+                            a(href='login.pug') Log In
+                // <div class="inner-menu">
+                // <div class="inner-header-wrapper">
+                // <ul class="inner-menu-cabinet" id="about-us">
+                // <li><a href="pug/smart-trade.html">Smart Trade</a></li>
+                // <li><a href="pug/deposit.php">Deposit</a></li>
+                // <li><a href="pug/withdraw-funds.html">Withdraw Funds</a></li>
+                // <li><a href="index.html" class="active">Personal Data</a></li>
+                // </ul>
+                // </div>
+                // </div>
+            section.register
+                .wrap
+                    .title
+                        h2
+                            span.orange START A SUCCESSFUL TRADER
+                        h2
+                            | CAREER 
+                            span.orange RIGHT NOW
+                        p Forgot your password?
+                        p
+                            | Enter your email address to reset your password. You may need to check your spam folder.
+                    .reg-form
+                        form
+                            .reg-form-wrap
+                                input.email(type='email', placeholder='Your E-mail', required='')
+                                // <input type="password" class="password" placeholder="Your Password" required>
+                                button.reg-form-bottom-btn.btn.btn__full.btn__full--green(type='button') Submit
+                        // <p><a href="../pug/forgotpass.php">Forgot your password?</a></p>
+            include includes/footer-litle.pug
